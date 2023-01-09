@@ -65,7 +65,7 @@ form button {
 }
 
 .gamesStore {
-  background-color: #009e89;
+  background-color: #264653;
   letter-spacing: 3px;
   font-family: Andale Mono, monospace;
 }
@@ -74,48 +74,70 @@ form button {
   font-family: Impact, Charcoal, sans-serif;
   font-size: 29px;
   letter-spacing: 3.4px;
-  word-spacing: 0.6px;
+  word-spacing: 1px;
   font-size: 25px;
-  color: #000000;
   font-weight: 400;
   text-decoration: none solid #444444;
   font-style: normal;
   font-variant: small-caps;
   text-transform: none;
+  color: #e9c46a;
+}
+.gamesStore__title h1.titleAnimation {
+  -webkit-animation: scale-up-center 0.5s ease-in-out both;
+  animation: scale-up-center 0.5s ease-in-out both;
 }
 
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
 .navBar {
   display: flex;
   justify-content: center;
-  background-color: #00ff55;
-  background-image: linear-gradient(to bottom right, #00ff9d, yellow);
+  background-color: #2a9d8f;
   border-radius: 20px;
   align-items: center;
-  box-shadow: inset 0px 0px 20px 10px #9ef08e;
-}
-.navBar:hover {
-  box-shadow: 0 0 20px #8ef0b4;
 }
 .navBar--logo {
-  margin: 5px;
+  margin: 2px 30px 0px 30px;
   animation: logoSlide 1s 1;
 }
 .navBar--logo img {
   width: 7vw;
-  height: 15vh;
+  height: 14vh;
 }
 .navBar__content ul {
   display: flex;
-  column-gap: 100px;
+  flex-direction: row;
+  gap: 100px;
 }
 .navBar__content ul li {
   list-style: none;
-  justify-content: space-between;
+}
+.navBar__content ul li input[type=text] {
+  border-radius: 10px;
+  width: 200px;
+  cursor: pointer;
 }
 .navBar__content ul li a {
   text-decoration: none;
-  justify-content: space-between;
-  gap: 100px;
   font-weight: bolder;
   color: #0d3544;
 }
@@ -150,14 +172,12 @@ form button {
   text-align: center;
   position: relative;
   display: inline-block;
-}
-.storeGame h1 {
-  text-shadow: 2px 2px #b8ff67, 2px 5px #034929, 3px 9px #191f74;
+  font-variant: small-caps;
+  text-transform: uppercase;
 }
 .storeGame__img--front {
   width: 460px;
   height: 215px;
-  box-shadow: 0 0 20px #b8ff67;
 }
 .storeGame__img--back {
   width: 460px;
@@ -168,7 +188,7 @@ form button {
   transition: opacity 0.2s;
 }
 .storeGame__img--back:hover {
-  box-shadow: 0px 0px 50px #dfffba;
+  box-shadow: 0px 0px 50px #ffffffca;
   opacity: 1;
   transform: scale(1.1);
 }
@@ -176,17 +196,16 @@ form button {
   display: grid;
   grid-template-columns: repeat(2, 300px);
   grid-template-rows: repeat(2, 1fr);
-  gap: 50px;
+  column-gap: 10px;
+  row-gap: 5px;
   justify-content: center;
 }
 .storeGame__editions h3 {
   font-style: italic;
-  font-variant: small-caps;
-  text-transform: uppercase;
 }
 .storeGame__editions--standardEdition {
   background-color: blue;
-  width: 250px;
+  width: 200px;
 }
 .storeGame__editions--standardEdition:hover {
   box-shadow: 0px 0px 50px #67d6f1;
@@ -196,7 +215,7 @@ form button {
 }
 .storeGame__editions--deluxeEdition {
   background-color: #d400ff;
-  width: 250px;
+  width: 200px;
 }
 .storeGame__editions--deluxeEdition:hover {
   box-shadow: 0px 0px 50px #f2b0ff;
@@ -206,7 +225,7 @@ form button {
 }
 .storeGame__editions--goldEdition {
   background-color: #ffe02f;
-  width: 250px;
+  width: 200px;
 }
 .storeGame__editions--goldEdition:hover {
   box-shadow: 0px 0px 50px #ffee8c;
@@ -216,7 +235,7 @@ form button {
 }
 .storeGame__editions--bundleEdition {
   background-color: #ff008c;
-  width: 250px;
+  width: 200px;
 }
 .storeGame__editions--bundleEdition:hover {
   box-shadow: 0px 0px 50px #ff8ecc;

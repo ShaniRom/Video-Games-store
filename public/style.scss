@@ -110,7 +110,7 @@ form{
 
 
 .gamesStore{
-    background-color: rgb(0, 158, 137);
+    background-color:rgb(38, 70, 83);
     letter-spacing: 3px;
     font-family:Andale Mono, monospace;
 &__title{
@@ -119,69 +119,91 @@ form{
         font-family: Impact, Charcoal, sans-serif;
         font-size: 29px;
         letter-spacing: 3.4px;
-        word-spacing: 0.6px;
+        word-spacing: 1px;
         font-size: 25px;
-        color: #000000;
+       // color: #000000;
         font-weight: 400;
         text-decoration: none solid rgb(68, 68, 68);
         font-style: normal;
         font-variant: small-caps;
         text-transform: none;
+        color:rgb(233, 196, 106);
+       h1.titleAnimation{  -webkit-animation: scale-up-center 0.5s ease-in-out  both;
+        animation: scale-up-center 0.5s ease-in-out  both;}
+   
     
-
 }
 
 }
+
+ @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+   
+
+       
+
+   
+
 
 
 .navBar{
     
     display:flex;
     justify-content: center;
-    background-color:rgb(0, 255, 85);
-    background-image: linear-gradient(to bottom right, rgb(0, 255, 157), yellow);    
+    background-color:rgb(42, 157, 143);   
     border-radius:20px;
     align-items:center;
-    box-shadow:inset 0px 0px 20px 10px #9ef08e;
-    
-    &:hover{
-        box-shadow: 0 0 20px #8ef0b4;
-        //border:5px solid rgb(240, 247, 246);
-        
-
-    }
-    
-    
-   
-   
-    
+ 
+     
     &--logo{
-        margin:5px;
+       
+        margin: 2px 30px 0px 30px;
         animation: logoSlide 1s 1;
         img{
             width:7vw;
-            height:15vh;
+            height:14vh;
             
         }
     }
     &__content{
         ul{
         display:flex;
-        column-gap: 100px;
+        flex-direction: row;
+        gap: 100px;          
         
-       
         
         
         
         li{
             list-style: none;            
-            justify-content: space-between;
-             
+          
+             input[type='text']{
+                border-radius: 10px;
+                width:200px;
+                cursor:pointer;
+             }
             
             a{
                 text-decoration: none;
-                justify-content: space-between;
-                gap:100px;
+               
                 font-weight:bolder;
                 color:rgb(13, 53, 68);
               
@@ -236,10 +258,9 @@ form{
     text-align:center;
     position: relative;
     display: inline-block;
-    h1{
-        text-shadow: 2px 2px #b8ff67,2px 5px rgb(3, 73, 41),3px 9px rgb(25, 31, 116);
-       // text-shadow: 200px 20px rgb(103, 255, 184);
-    }
+    font-variant: small-caps;
+    text-transform: uppercase;
+
 
 
     &__img{
@@ -248,9 +269,8 @@ form{
             &--front{
                 width:460px;
                 height:215px;
-
-            box-shadow: 0 0 20px #b8ff67;    
-            }
+ 
+             }
 
             &--back{
                 width:460px;
@@ -262,7 +282,7 @@ form{
                 transition: opacity .2s;
 
                 &:hover{
-                    box-shadow: 0px 0px 50px #dfffba; 
+                    box-shadow: 0px 0px 50px #ffffffca; 
                     opacity: 1;
                     //perspective: 1000px;
                     transform: scale(1.1);
@@ -281,14 +301,15 @@ form{
         display:grid;        
         grid-template-columns: repeat(2,300px);
         grid-template-rows: repeat(2,1fr);
-        gap:50px;
+        column-gap:10px;
+        row-gap: 5px;
         justify-content: center;
         h3{
             font-style: italic;
-            font-variant: small-caps;
-            text-transform: uppercase;
+          
             
         }
+       
        
 
         
@@ -296,7 +317,7 @@ form{
        
         &--standardEdition{
             background-color: blue;
-            width:250px; 
+            width:200px; 
             &:hover{
                 box-shadow: 0px 0px 50px #67d6f1;
                 background-color: rgba(88, 122, 235, 0.747);
@@ -309,7 +330,7 @@ form{
         }
         &--deluxeEdition{
             background-color: rgb(212, 0, 255);
-            width:250px;
+            width:200px; 
             &:hover{
                 box-shadow: 0px 0px 50px rgb(242, 176, 255);
                 background-color: rgba(225, 119, 247, 0.801);
@@ -319,7 +340,7 @@ form{
         }
         &--goldEdition{
             background-color: rgb(255, 224, 47);
-            width:250px;
+            width:200px; 
            
             &:hover{
                 box-shadow: 0px 0px 50px rgb(255, 238, 140);
@@ -330,7 +351,7 @@ form{
         }
         &--bundleEdition{
             background-color: rgb(255, 0, 140);
-            width:250px;
+            width:200px; 
             
             &:hover{
                 box-shadow: 0px 0px 50px rgb(255, 142, 204);
