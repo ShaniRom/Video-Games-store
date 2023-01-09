@@ -1,7 +1,7 @@
 
 body{
     background-color: rgb(184, 219, 230);
-    font-family:Andale Mono, monospace;
+    
 }
 
 
@@ -58,7 +58,7 @@ form{
        
      color:rgb(0, 0, 0);  
      text-decoration: underline overline #28ff4c;   
-        
+     
 
     }
 
@@ -68,12 +68,13 @@ form{
         font-weight: bolder;
         text-transform: uppercase;
         
+        
 
         
     }
 
     label[for=standardEdition]{
-
+       
     color:blue;
     
     }
@@ -106,22 +107,38 @@ form{
 
 // game store scss
 
-@import url('http://fonts.cdnfonts.com/css/games');
+
 
 .gamesStore{
     background-color: rgb(0, 158, 137);
-    font-family: 'Games', sans-serif;
     letter-spacing: 3px;
+    font-family:Andale Mono, monospace;
+&__title{
+   text-align: center;
+   
+        font-family: Impact, Charcoal, sans-serif;
+        font-size: 29px;
+        letter-spacing: 3.4px;
+        word-spacing: 0.6px;
+        font-size: 25px;
+        color: #000000;
+        font-weight: 400;
+        text-decoration: none solid rgb(68, 68, 68);
+        font-style: normal;
+        font-variant: small-caps;
+        text-transform: none;
     
 
 }
+
+}
+
 
 .navBar{
     
     display:flex;
     justify-content: center;
     background-color:rgb(0, 255, 85);
-    //border:5px solid rgb(4, 78, 105);    
     background-image: linear-gradient(to bottom right, rgb(0, 255, 157), yellow);    
     border-radius:20px;
     align-items:center;
@@ -159,7 +176,7 @@ form{
         li{
             list-style: none;            
             justify-content: space-between;
-            
+             
             
             a{
                 text-decoration: none;
@@ -167,6 +184,7 @@ form{
                 gap:100px;
                 font-weight:bolder;
                 color:rgb(13, 53, 68);
+              
                
                 &:hover{
                     color:white;
@@ -259,11 +277,18 @@ form{
     
    
     &__editions{
+        
         display:grid;        
         grid-template-columns: repeat(2,300px);
         grid-template-rows: repeat(2,1fr);
         gap:50px;
         justify-content: center;
+        h3{
+            font-style: italic;
+            font-variant: small-caps;
+            text-transform: uppercase;
+            
+        }
        
 
         

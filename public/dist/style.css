@@ -1,7 +1,5 @@
-@import url("http://fonts.cdnfonts.com/css/games");
 body {
   background-color: #b8dbe6;
-  font-family: Andale Mono, monospace;
 }
 
 .erp {
@@ -68,8 +66,22 @@ form button {
 
 .gamesStore {
   background-color: #009e89;
-  font-family: "Games", sans-serif;
   letter-spacing: 3px;
+  font-family: Andale Mono, monospace;
+}
+.gamesStore__title {
+  text-align: center;
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 29px;
+  letter-spacing: 3.4px;
+  word-spacing: 0.6px;
+  font-size: 25px;
+  color: #000000;
+  font-weight: 400;
+  text-decoration: none solid #444444;
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: none;
 }
 
 .navBar {
@@ -166,6 +178,11 @@ form button {
   grid-template-rows: repeat(2, 1fr);
   gap: 50px;
   justify-content: center;
+}
+.storeGame__editions h3 {
+  font-style: italic;
+  font-variant: small-caps;
+  text-transform: uppercase;
 }
 .storeGame__editions--standardEdition {
   background-color: blue;
