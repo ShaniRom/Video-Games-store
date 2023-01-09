@@ -117,13 +117,10 @@ form{
    text-align: center;
    
         font-family: Impact, Charcoal, sans-serif;
-        font-size: 29px;
-        letter-spacing: 3.4px;
+        letter-spacing: 5px;
         word-spacing: 1px;
-        font-size: 25px;
-       // color: #000000;
-        font-weight: 400;
-        text-decoration: none solid rgb(68, 68, 68);
+        font-size: 20px;
+        text-decoration: none solid rgb(80, 80, 80);
         font-style: normal;
         font-variant: small-caps;
         text-transform: none;
@@ -187,7 +184,7 @@ form{
         ul{
         display:flex;
         flex-direction: row;
-        gap: 100px;          
+        gap: 80px;          
         
         
         
@@ -264,12 +261,12 @@ form{
 
 
     &__img{
-        
+    
         
             &--front{
                 width:460px;
                 height:215px;
- 
+               
              }
 
             &--back{
@@ -297,12 +294,12 @@ form{
     
    
     &__editions{
-        
+     
         display:grid;        
-        grid-template-columns: repeat(2,300px);
+        grid-template-columns: repeat(2,260px);
         grid-template-rows: repeat(2,1fr);
-        column-gap:10px;
         row-gap: 5px;
+        margin-left:59px;
         justify-content: center;
         h3{
             font-style: italic;
